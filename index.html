@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const sub = urlParams.get("url");
+      if (sub) {
+        window.location.href = sub;
+      } else {
+        document.write("URL parameter missing.");
+      }
+    </script>
+  </body>
+</html>
